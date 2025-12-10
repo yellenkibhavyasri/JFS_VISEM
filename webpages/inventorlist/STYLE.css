@@ -65,7 +65,7 @@ select{
   align-items:center;
   justify-content:center;
   background:linear-gradient(180deg,#fbfdff,#f3f7ff);
-  border:5px solid rgba(95,23,42,0.04);
+  border:5px solid rgba(12,23,42,0.04);
   transition:box-shadow .15s ease, transform .15s ease;
 }
 .avatar img{
@@ -76,7 +76,8 @@ select{
 }
 .avatar.empty{
   background:linear-gradient(180deg,#ffffff,#fbfdff);
-  border-style:dashed;
+  border: 2px solid black;
+  border-style:solid;
 }
 .avatar:not(.empty){ box-shadow:0 10px 30px rgba(37,99,235,0.08); transform:translateY(-2px); }
 
@@ -111,6 +112,7 @@ select{
   color:var(--muted);
   font-size:15px;
   padding:18px 0;
+  border: 2px solid black;
   
 }
 
