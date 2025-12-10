@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programming Language Inventors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Programming Language Inventors</h1>
+      <p class="hint">Select a programming language inventor</p>
+    </header>
+
+    <section class="controls">
+      <label for="inventorSelect" class="sr-only">Choose inventor</label>
+      <select id="inventorSelect" aria-label="Choose inventor">
+        <option value="">-- Select an inventor --</option>
+      </select>
+    </section>
+
+    <section class="display" id="displayArea" aria-live="polite">
+      <div class="avatar empty" id="avatarWrap" aria-hidden="true">
+        <!-- img element will be inserted/updated by JS -->
+        <img id="avatarImg" src="" alt="">
+      </div>
+
+      <div class="info" id="infoBox">
+        <h2 id="infoName"></h2>
+        <p id="infoLang" class="tag"></p>
+        <p id="infoLifespan" class="muted"></p>
+        <p id="infoAbout"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
